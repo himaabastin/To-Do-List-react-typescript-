@@ -1,0 +1,41 @@
+.input {
+  margin-top: 30px;
+  width: 50%;
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+.input__field {
+  padding: 25px;
+  margin: 5px;
+  border-radius: 20px;
+  font-size: medium;
+  width: 100%;
+  border: none;
+  transition: 0.2s;
+  box-shadow: inset 0 0 5px black;
+}
+.input__field:focus {
+  box-shadow: 0 0 10px 1000px rgba(0, 0, 0, 0.5);
+  outline: none;
+}
+.input__button {
+  position: absolute;
+  right: 3%;
+  border: none;
+  background-color: rgb(64, 102, 122);
+  color: white;
+  padding: 20px;
+  font-size: 15px;
+  border-radius: 100%;
+  transition: transform 1s, background 2s;
+  box-shadow: inset 0 0 3px black;
+}
+.input__button:hover {
+  background-color: rgb(68, 131, 165);
+  transform: rotate(360deg);
+}
+.input__button:active {
+  transform: scale(0.8);
+  box-shadow: 0 0 3px;
+}
