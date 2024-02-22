@@ -1,0 +1,42 @@
+.todos {
+  display: flex;
+  justify-content: space-evenly;
+  width: 90%;
+  flex-wrap: wrap;
+  margin: 30px 30px;
+}
+.todos__single {
+  width: 30%;
+  height: 80px;
+  border-radius: 5px;
+  margin-bottom: 30px;
+  background-image: url("https://img.freepik.com/free-photo/black-concrete-wall_24972-1046.jpg?size=626&ext=jpg&ga=GA1.1.946239694.1708560000&semt=ais");
+  box-shadow: 1px 1px 5px inset rgb(67, 96, 107);
+}
+.todos__single-text {
+  color: white;
+  font-weight: 400;
+  font-size: 25px;
+  margin: 15px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.todos__icon {
+  margin: 4px;
+  cursor: pointer;
+}
+
+@media (max-width: 1200px) {
+  .todos__single {
+    width: 40%;
+  }
+}
+@media (max-width: 700px) {
+  .todos {
+    width: 95%;
+  }
+  .todos__single {
+    width: 100%;
+  }
+}
